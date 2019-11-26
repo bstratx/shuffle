@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class DeckShuffler {
 
-
     private static final String[] CARD_NAMES = {
         "2",
         "3",
@@ -41,7 +40,7 @@ public class DeckShuffler {
     }
 
     private static void printCard(int cardNumber) {
-        final int suitIndex = cardNumber/CARDS_IN_SUIT;
+        final int suitIndex = cardNumber/CARDS_IN_SUIT; // note integer division
         final int cardIndex = cardNumber - (suitIndex * CARDS_IN_SUIT);
         System.out.println(CARD_NAMES[cardIndex] + "." + SUIT_NAMES[suitIndex]);
     }
